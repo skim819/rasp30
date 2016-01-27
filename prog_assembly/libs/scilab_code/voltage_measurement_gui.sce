@@ -181,6 +181,7 @@ if No_of_mite ~= 0 then
         legend_list(j,1)='Output_' + string(j);
         j=j+1;
     end
+    csvWrite(data,'MITE_ADC_Output_voltage.csv');
 end
 
 if No_of_DACs ~= 0 | No_of_mite ~= 0 then
